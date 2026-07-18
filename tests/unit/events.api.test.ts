@@ -1,6 +1,6 @@
 import { expect, test, vi, describe, beforeEach } from "vitest";
-import { POST, GET } from "../../../frontend/app/api/events/route";
-import { PATCH, GET as GET_ID } from "../../../frontend/app/api/events/[id]/route";
+import { POST, GET } from "../../frontend/app/api/events/route";
+import { PATCH, GET as GET_ID } from "../../frontend/app/api/events/[id]/route";
 import { NextRequest } from "next/server";
 
 vi.mock("@backend/lib/auth", () => ({

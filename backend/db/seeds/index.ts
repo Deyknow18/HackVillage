@@ -35,9 +35,10 @@ async function main() {
     create: {
       slug: "nairobi-climate-sprint",
       title: "Nairobi Climate Sprint",
-      problemStatement:
+      problem_statement:
         "Build tools that help Kenyan communities track and reduce local emissions.",
       status: "PRIZE_VERIFIED",
+      prize_total: 500000,
       prizePoolKes: 500000,
       organizerId: organizer.id,
       escrowVault: {

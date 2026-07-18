@@ -10,11 +10,11 @@ export const eventDraftSchema = z.object({
 
 export const updateEventDraftSchema = eventDraftSchema.partial();
 
-export function formatZodError(error: z.ZodError) {
+export function formatZodError(error: z.ZodError<any>) {
   return {
     error: {
       code: "VALIDATION_ERROR",
-      message: error.errors.map(e => e.message).join(", ")
+      message: error.issues.map((e: z.ZodIssue) => e.message).join(", ")
     }
   };
 }
